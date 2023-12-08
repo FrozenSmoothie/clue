@@ -1,15 +1,14 @@
 const quizData = [
     {
-        question: "What is the capital of France?",
-        options: ["Berlin", "Madrid", "Paris", "Rome"],
-        correctAnswer: "Paris"
+        question: "Beste club?",
+        options: ["AZ", "PSV", "Ajakkes", "FC Groningen"],
+        correctAnswer: "FC Groningen"
     },
     {
-        question: "Which planet is known as the Red Planet?",
-        options: ["Earth", "Mars", "Venus", "Jupiter"],
-        correctAnswer: "Mars"
+        question: "Appel of Peer?",
+        options: ["Appel", "Peer"],
+        correctAnswer: "Peer"
     }
-    // Add more questions as needed
 ];
 
 let currentQuestion = 0;
