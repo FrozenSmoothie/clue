@@ -8,11 +8,19 @@
 </head>
 <body>
 
-<div id="quiz-container">
+<div id="start-container">
+    <h1 class="text-gradient">Welkom bij de clue Quiz!</h1>
+    <button onclick="startQuiz()">Start</button>
+</div>
+
+<div id="quiz-container" style="display:none;">
     <div id="question-container" class="question"></div>
     <div id="options-container" class="options"></div>
-    <button onclick="nextQuestion()">Volgende</button>
     <div id="result"></div>
+    <div id="wrong-answer" style="display:none;">
+        <h1 class="text-gradient">Haha fout! Start opnieuw.</h1>
+        <button onclick="startQuiz()">Start overnieuw</button>
+    </div>
 </div>
 
 <script src="script.js"></script>

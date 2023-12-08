@@ -1,9 +1,21 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Comic Sans MS';
     text-align: center;
+    font-size: 30px;
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.3s ease-in-out;
 }
 #quiz-container {
     margin: 20px;
+}
+.text-gradient {
+    /* Initial background color for non-supporting browsers */
+    background: green;
+    /* Mask the color to the text, and remove the rest */
+    -webkit-background-clip: text;
+    /* Make the text fill color value transparent so the masked background color comes through */
+    -webkit-text-fill-color: transparent;
 }
 .question {
     margin-bottom: 10px;
@@ -19,9 +31,16 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     transition: background-color 0.3s;
+	font-family: 'Comic Sans MS';
 }
 .option:hover {
     background-color: #f0f0f0;
+}
+.wrong-answer-message {
+	text-align: center;
+	font-size: 18px;
+	margin-top: 50vh; /* Adjust as needed for vertical centering */
+	
 }
 #result {
     margin-top: 20px;
