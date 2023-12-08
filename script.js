@@ -56,7 +56,8 @@ const imagePathArray = [
     'Byleth1.jpeg', 
     'Byleth2.jpeg',
     'vrijeslag.jpg',
-    'psv.jpeg'
+    'psv.jpeg',
+	'duck.jpeg'
 ];
 
 // Function to get a random image path from the array
