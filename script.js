@@ -51,6 +51,45 @@ const quizData = [
     },
 ];
 
+function getRandomVideoId() {
+    // Replace this array with your own list of video IDs
+    const videoIds = [
+		"FSK5Gtf5bkA",
+		"2NMBZ-zx6a4",
+		"txiyDu4XYl8",
+		"rcnwmGRKprQ",
+		"vHxzRdc4aPk",
+		"buc64u6Q_oA",
+		"Bjt7mDVCLtk",
+		"ERyijCQllus",
+		"APk4mLodk88",
+		"HVuzwbYhTA0"
+	];
+
+    // Get a random index from the array
+    const randomIndex = Math.floor(Math.random() * videoIds.length);
+
+    // Return the random video ID
+    return videoIds[randomIndex];
+}
+
+function loadRandomVideo() {
+    // Get the iframe element
+    const iframe = document.getElementById("youtube-iframe");
+
+    // Get a random video ID
+    const randomVideoId = getRandomVideoId();
+
+    // Construct the YouTube video URL with autoplay
+    const videoUrl = `https://www.youtube.com/embed/${randomVideoId}?autoplay=1`;
+
+    // Set the iframe src attribute to the constructed URL
+    iframe.src = videoUrl;
+}
+
+// Call the function to load a random video when the page loads
+loadRandomVideo();
+
 // Array of image file paths
 const imagePathArray = [
     'Byleth1.jpeg', 

@@ -8,13 +8,21 @@
 </head>
 <body>
 
-<audio controls autoplay>
+<audio controls>
 	<source src="elevator.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 </audio>
 
 <div id="start-container">
     <h1 class="text-gradient">Welkom bij de clue Quiz!</h1>
+	<iframe 
+		id="youtube-iframe"
+		title="YouTube video player" 
+		frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+		allowfullscreen>
+	</iframe>
+	<br>
     <button onclick="startQuiz()">Start</button>
 </div>
 
