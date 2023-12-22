@@ -1,5 +1,10 @@
 const quizData = [
     {
+        question: "antwoord = a",
+        options: ["a","b"],
+        correctAnswer: "a"
+    },
+    {
         question: "Beste club?",
         options: ["AZ", "PSV", "Ajakkes", "FC Groningen"],
         correctAnswer: "FC Groningen"
@@ -48,6 +53,71 @@ const quizData = [
         question: "33% kans HAHAHA",
         options: ["1", "2", "3", "4"],
         correctAnswer: "3"
+    },
+    {
+        question: "straal van een cirkel staat gelijk aan 2 maal de middellijn",
+        options: ["waar", "niet waar"],
+        correctAnswer: "niet waar"
+    },
+    {
+        question: "Welke hoort er niet bij?",
+        options: ["navenant", "averechts", "analoog", "concordant"],
+        correctAnswer: "averechts"
+    },
+    {
+        question: "Hoe noemen we de rode kleur in de nederlandse vlag",
+        options: ["vermiljoen", "karmozijn", "ultramarijn"],
+        correctAnswer: "vermiljoen"
+    },
+    {
+        question: "Hoe noemen we een metafoor die een heel verhaal doorgaat?",
+        options: ["beeldspraak", "metoniem", "allegorie"],
+        correctAnswer: "allegorie"
+    },
+    {
+        question: "Vòòr Vasco da Gama rond de zuidkaap voer, had Zheng He de hele oostkust van Afrika al bezocht",
+        options: ["waar", "niet waar"],
+        correctAnswer: "waar"
+    },
+    {
+        question: "Wie was stadhouder?",
+        options: ["willem van oranje", "johan van oldenbarnevelt","floris de vijfde"],
+        correctAnswer: "willem van oranje"
+    },
+    {
+        question: "wat werkt bij een val tegengesteld aan de zwaartekracht?",
+        options: ["wrijvingskracht", "normaalkracht", "gravitatiekracht"],
+        correctAnswer: "wrijvingskracht"
+    },    
+    {
+        question: "Wie is er sneller?",
+        options: ["Thijmen", "slak"],
+        correctAnswer: "slak"
+    },
+    {
+        question: "Welke hoort er niet bij?",
+        options: ["jambe", "ballade", "dactylus", "anapest"],
+        correctAnswer: "ballade"
+    },
+    {
+        question: "Wat is mijn lievelingsnummer?",
+        options: ["27", "21", "24"],
+        correctAnswer: "21"
+    },
+    {
+        question: "Wat is mijn lievelingskleur?",
+        options: ["geen idee", "diepzeegroen", "cyan"],
+        correctAnswer: "cyan"
+    },
+    {
+        question: "50/50",
+        options: ["a", "b"],
+        correctAnswer: "a"
+    },
+    {
+        question: "50/50 opnieuw",
+        options: ["a", "b"],
+        correctAnswer: "a"
     },
 ];
 
@@ -197,7 +267,7 @@ function checkAnswer(selectedOption) {
 
 function showResult() {
     const resultContainer = document.getElementById("result");
-    resultContainer.innerHTML = `Congratulations! You scored ${score}/${quizData.length}. Now, here's a clue: [Insert your clue here].`;
+    resultContainer.innerHTML = `Einde van de quiz! Je scoorde: ${score}/${quizData.length}. Hier is je hint: QR-code 84`;
 }
 
 function showWrongAnswer() {
